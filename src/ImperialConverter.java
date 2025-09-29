@@ -1,14 +1,14 @@
 // Adaptee with an incompatible interface
 public class ImperialConverter {
-    public double getMiles(double kilometers) {
-        return kilometers * 0.621371;
+    public double getKilometers(double miles) {
+        return miles / 0.621371;
     }
 
-    public double getFahrenheit(double celsius) {
-        return celsius * 9 / 5 + 32;
+    public double getCelsius(double fahrenheit) {
+        return (fahrenheit - 32) * 5 / 9;
     }
 
-    public double getGallons(double liters) {
-        return liters * 0.264172;
+    public double getLiters(double gallons) {
+        return gallons / 0.264172;
     }
 }

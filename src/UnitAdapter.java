@@ -9,17 +9,17 @@ public class UnitAdapter implements MetricConverter {
 
     // Override methods for getting metric units
     @Override
-    public double getKilometers(double miles){
-        return miles / 0.621371;
+    public double convertDistance(double miles){
+        return imperial.getKilometers(miles);
     }
 
     @Override
-    public double getCelsius(double fahrenheit){
-        return (fahrenheit - 32) * 5 / 9;
+    public double convertTemperature(double fahrenheit){
+        return imperial.getCelsius(fahrenheit);
     }
 
     @Override
-    public double getLiters(double gallons){
-        return gallons / 0.264172;
+    public double convertVolume(double gallons){
+        return imperial.getLiters(gallons);
     }
 }

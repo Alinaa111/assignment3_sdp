@@ -11,14 +11,16 @@ public class Main {
 
         System.out.print("Enter miles: ");
         double miles = sc.nextDouble();
-        System.out.println("In kilometers: " + adapter.getKilometers(miles));
+        System.out.println("In kilometers: " + adapter.convertDistance(miles));
 
         System.out.print("Enter fahrenheits: ");
         double fahrenheits = sc.nextDouble();
-        System.out.println("In celsius: " + adapter.getCelsius(fahrenheits));
+        System.out.println("In celsius: " + adapter.convertTemperature(fahrenheits));
 
         System.out.print("Enter gallons: ");
         double gallons = sc.nextDouble();
-        System.out.println("In liters: " + adapter.getLiters(gallons));
+        System.out.println("In liters: " + adapter.convertVolume(gallons));
+
+
     }
 }
